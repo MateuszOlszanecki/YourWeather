@@ -1,0 +1,146 @@
+* {
+    --normalViewTilesColor: rgb(145, 204, 255);
+    --normalViewBackgroundColor: rgb(89, 178, 255);
+
+    --specialViewTilesColor: gray;
+    --specialViewBackgroundColor: black;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background: var(--normalViewBackgroundColor);
+}
+
+.cityInput::placeholder {
+    color: white;
+    opacity: 0.75;
+}
+
+/*All styles for normal view*/
+.normalView {
+    padding: 5px;
+    gap: 5px;
+    font-size: 36px;
+    grid-template-columns: auto 100px;
+    grid-auto-rows: auto;
+}
+
+.normalView .appName {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.normalView .cityDisplay{
+    grid-template-rows: auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.normalView .cityNameDisplay, .normalView .cityTimeDisplay, .normalView .cityDateDisplay {
+    width: auto;
+    text-align: center;
+    overflow: scroll;
+    border: none;
+    width: 100%;
+}
+
+.normalView .cityNameDisplay {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.normalView .cityInput {
+    height: 50px;
+    font-size: 30px;
+    width: 100%;
+    background: var(--normalViewTilesColor);
+    border: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.normalView img {
+    width: 100px;
+    height: 100px;
+    background: var(--normalViewTilesColor);
+}
+
+.normalView .infoBlock, .normalView .appName {
+    background: var(--normalViewTilesColor);
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+/*All styles for special view*/
+.specialView {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 50px;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+}
+
+.specialView .appName {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.specialView .cityDisplay{
+    color: white;
+    margin-top: 50px;
+    grid-template-rows: auto auto auto;
+}
+
+.specialView .cityNameDisplay, .specialView .cityTimeDisplay, .specialView .cityDateDisplay {
+    width: auto;
+    text-align: center;
+    overflow: scroll;
+    border: none;
+    width: 100%;
+}
+
+.specialView .cityNameDisplay {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.specialView .cityInput {
+    height: 100px;
+    font-size: 50px;
+    width: 100%;
+    background: var(--specialViewTilesColor);
+    border: none;
+}
+
+.specialView img {
+    width: 100%;
+    height: 100%;
+    background: var(--specialViewTilesColor);
+}
+
+.specialView .infoBlock, .specialView .appName, .specialView .infoLabel {
+    background: var(--specialViewTilesColor);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.specialView .infoBlock {
+    height: 200px;
+    font-size: 64px;
+}
+
+.specialView .infoLabel {
+    margin-top: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourWeather</title>
+    <link rel="shortcut icon" href="#">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="normalView">
+        <div class="appName">Your Weather</div>
+        <img src="icons/toSpecialModeIcon.png" class="switchView">
+        <input type="text" class="cityInput" placeholder="Type city name">
+        
+        <div class="cityDisplay">
+            <div class="cityNameDisplay"></div>
+            <div class="cityTimeDisplay"></div>
+            <div class="cityDateDisplay"></div>
+        </div>
+
+        <div class="infoBlock"></div>
+        <img class="weatherIcon" src="icons/normalViewBlankTile.png">
+
+        <div class="infoBlock"></div>
+        <img src="icons/tempIcon.png">
+
+        <div class="infoBlock"></div>
+        <img src="icons/airIcon.png">
+
+        <div class="infoBlock"></div>
+        <img src="icons/sunriseIcon.png">
+
+        <div class="infoBlock"></div>
+        <img src="icons/sunsetIcon.png">
+    </div>
+
+
+    <div class="specialView">
+        <div class="appName">Your Weather</div>
+        <img src="icons/toNormalModeIcon.png" class="switchView">
+        <input type="text" class="cityInput" placeholder="Type city name">
+
+        <div class="cityDisplay">
+            <div class="cityNameDisplay"></div>
+            <div class="cityTimeDisplay"></div>
+            <div class="cityDateDisplay"></div>
+        </div>
+
+        <div class="infoLabel">Description</div>
+        <div class="infoBlock"></div>
+        <img class="weatherIcon" src="icons/specialViewBlankTile.png">
+        
+        <div class="infoLabel">Temperature</div>
+        <div class="infoBlock"></div>
+        
+        <div class="infoLabel">Air pressure</div>
+        <div class="infoBlock"></div>
+
+        <div class="infoLabel">Sunrise</div>
+        <div class="infoBlock"></div>
+
+        <div class="infoLabel">Sunset</div>
+        <div class="infoBlock"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
